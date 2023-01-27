@@ -1,0 +1,6 @@
+{
+    "diagnostic.refreshOnInsertMode": true,
+    "suggest.triggerCompletionWait": 50,
+    "diagnostic.checkCurrentLine": true,
+    "javascript.suggestionActions.enabled": false
+}

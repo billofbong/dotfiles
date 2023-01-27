@@ -1,0 +1,8 @@
+vim/.vim/plugged 
+vim/.vim/autoload 
+vim/.vim/.netrwhist
+# Ignore swapfiles
+.vim/.*.swp
+.vim/*/.*.swp
+.vim/*/*/.*.swp
+.vim/*/*/*/.*.swp
