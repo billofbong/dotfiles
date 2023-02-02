@@ -11,8 +11,14 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin()
 
+" Enfocado
 Plug 'wuelnerdotexe/vim-enfocado'
+
+" Github Copilot
 Plug 'github/copilot.vim'
+
+"NERDTree
+Plug 'scrooloose/nerdtree'
 
 " Airline
 Plug 'vim-airline/vim-airline'
