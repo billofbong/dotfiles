@@ -4,3 +4,5 @@ This repository is a personal location for me to store my dotfiles, so it's easy
 If you want to use them, feel free. Clone this repo, then `sudo ./activate.sh`. 
 
 If you want to use one or the other, use `stow vim` or `stow bash`. Keep in mind, though, that my vim setup requires some additional installations, like nodejs and curl (which doesn't come with Ubuntu for some reason). The nodejs version must be >= 14.
+
+Unfortunately, Windows users are on their own. I'm going to have to figure out how to set it up at some point, but for now this is really UNIX-only.
