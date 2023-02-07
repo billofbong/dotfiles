@@ -19,6 +19,7 @@ Plug 'github/copilot.vim'
 
 "NERDTree
 Plug 'scrooloose/nerdtree'
+nmap <F10> :NERDTreeToggle<CR>
 
 " Airline
 Plug 'vim-airline/vim-airline'
