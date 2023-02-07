@@ -77,7 +77,7 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Keep gutter up
-set signcolumn=auto
+set signcolumn=yes
 
 " Lower update time
 set updatetime=100
