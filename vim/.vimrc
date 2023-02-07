@@ -12,14 +12,23 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin()
 
 " Enfocado
-Plug 'wuelnerdotexe/vim-enfocado'
+" Plug 'wuelnerdotexe/vim-enfocado'
+
+" gruvbox
+Plug 'morhetz/gruvbox'
 
 " Github Copilot
 Plug 'github/copilot.vim'
 
-"NERDTree
+" NERDTree
 Plug 'scrooloose/nerdtree'
 nmap <F10> :NERDTreeToggle<CR>
+
+" Gitgutter
+Plug 'airblade/vim-gitgutter'
+
+" Fugitive
+Plug 'tpope/vim-fugitive'
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -68,10 +77,10 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Keep gutter up
-set signcolumn=number
+set signcolumn=auto
 
 " Lower update time
-set updatetime=750
+set updatetime=100
 
 """
 
@@ -79,11 +88,13 @@ set updatetime=750
 nnoremap <silent> <F12> :bn<CR>
 nnoremap <silent> <S-F12> :bp<CR>
 
-" Enfocado
+" Theme
 set termguicolors
 set background=dark
-let g:enfocado_style = 'neon'
-colorscheme enfocado
+" let g:enfocado_style = 'neon'
+" colorscheme enfocado
+autocmd vimenter * ++nested colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
 
 " Change error highlighting
 highlight CocErrorHighlight ctermfg=Red  guifg=#ff0000
