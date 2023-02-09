@@ -17,6 +17,9 @@ call plug#begin()
 " gruvbox
 Plug 'morhetz/gruvbox'
 
+" Commentary
+Plug 'tpope/vim-commentary'
+
 " Github Copilot
 Plug 'github/copilot.vim'
 
